@@ -1,0 +1,22 @@
+{
+  "name": "charpenteTest",
+  "version": "0.0.0",
+  "description": "",
+  "private": true,
+  "main": "main.js",
+  "directories": {
+    "man": "man"
+  },
+  "scripts": {
+    "test": "mocha srcjs/test",
+    "build-dev": "esbuild srcjs/main.js --bundle --format=esm --outfile=inst/charpenteTest-0.0.0.9000/js/charpenteTest.js",
+    "build-prod": "esbuild srcjs/main.js --bundle --minify --sourcemap --format=esm --outfile=inst/charpenteTest-0.0.0.9000/js/charpenteTest.min.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT + file LICENSE",
+  "devDependencies": {
+    "esbuild": "^0.8.57",
+    "mocha": "^8.4.0"
+  }
+}
